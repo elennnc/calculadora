@@ -1,1 +1,22 @@
-# calculadora
+<html>
+    <head>
+       
+    </head>
+    <body>
+        <input type="number" id="valor1" placeholder="Digite o primeiro valor">
+        <input type="number" id="valor2" placeholder="Digite o segundo valor">
+
+        <button onclick="calcular()">Calcular</button>
+
+        <script>
+            function calcular(){
+                let c_valor1 = document.getElementById("valor1");
+                let c_valor2 = document.getElementById("valor2");
+
+                let resultado = Number(c_valor1.value) + Number(c_valor2.value);
+
+                alert("O resultado é: " + resultado);
+            }
+        </script>
+    </body>
+</html>
